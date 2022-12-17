@@ -78,7 +78,7 @@
 
     mixpanel.init('28ad1bd3f9fbcda7356c70835a0b4d96');
     mixpanel.track('Screen View', {
-  'Game Name': "Hero Rescue",
+  'Game Name': "Mini Golf",
   'Page Name': "Game Landing Page"
 });
 
@@ -112,7 +112,7 @@
 			//Start Mixpanel
 			mixpanel.track('Ad View', {
 		
-				'Game Name': "Hero Rescue",
+				'Game Name': "Mini Golf",
 				'Ad Media Type': "Footer"
 			
   		
@@ -139,7 +139,7 @@
 				//Start Mixpanel
 				mixpanel.track('Ad Failure', {
 		
-					'Game Name': "Hero Rescue",
+					'Game Name': "Mini Golf",
 					'Ad Media Type': "Footer",
 					'Failure Reason': "Ad Slot Empty"
 			
@@ -152,7 +152,7 @@
 				//Start Mixpanel
 				mixpanel.track('Ad Initialized', {
 		
-					'Game Name': "Hero Rescue",
+					'Game Name': "Mini Golf",
 					'Ad Media Type': "Footer"
 			
   		
@@ -174,7 +174,7 @@
 			//Start Mixpanel
 			mixpanel.track('Ad Request', {
 		
-				'Game Name': "Hero Rescue",
+				'Game Name': "Mini Golf",
 				'Ad Media Type': "Footer"
 			});
 			//End Mixpanel
@@ -191,7 +191,7 @@
 			//Start Mixpanel
 			mixpanel.track('Ad Response', {
 		
-				'Game Name': "Hero Rescue",
+				'Game Name': "Mini Golf",
 				'Ad Media Type': "Footer"
 			});
 			//End Mixpanel
@@ -258,7 +258,7 @@ var footerAD = document.getElementById('gamescreen-footer');
 	
 
 function requestAds() {
-    footerAD.style.display = 'none';
+    	footerAD.style.display = 'none';
 	mainContainer.src= './interstitial.html';
 	mainContainer.style.display = 'block';
 	
@@ -268,18 +268,18 @@ function requestAds() {
 
 function closeEmptyInterstitialAds() {
 	footerAD.style.display = 'block';
-    refreshfooterSlot();
+    	refreshfooterSlot();
 	mainContainer.style.display = 'none';
 	mainContainer.src= 'about:blank';
 }
 	
 function closeAds() {
 		footerAD.style.display = 'block';
-        refreshfooterSlot();
+        	refreshfooterSlot();
 		mainContainer.style.display = 'none';
 		mainContainer.src= 'about:blank';
 		mixpanel.track('Skip Ad', {
-  			'Game Name': "Hero Rescue",
+  			'Game Name': "Mini Golf",
 			'Ad Media Type': "Interstitial"
   		
 		});
